@@ -1,9 +1,14 @@
-# api documentation for  [gulp-change (v1.0.0)](https://github.com/PoliteJS/gulp-change)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-change.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-change) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-change.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-change)
+# npmdoc-gulp-change
+
+#### api documentation for  [gulp-change (v1.0.0)](https://github.com/PoliteJS/gulp-change)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-change.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-change) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-change.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-change)
+
 #### allow file content manipulations
 
-[![NPM](https://nodei.co/npm/gulp-change.png?downloads=true)](https://www.npmjs.com/package/gulp-change)
+[![NPM](https://nodei.co/npm/gulp-change.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-change)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-change/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-change_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-change/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-change/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-change/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-change/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-change/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-change/build/screenCapture.npmPackageListing.svg)
 
@@ -47,13 +52,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "mpeg",
-            "email": "marco.pegoraro@gmail.com"
+            "name": "mpeg"
         }
     ],
     "name": "gulp-change",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/PoliteJS/gulp-change.git"
@@ -64,16 +67,6 @@
     "version": "1.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-change](#apidoc.module.gulp-change)
-
-
-
-# <a name="apidoc.module.gulp-change"></a>[module gulp-change](#apidoc.module.gulp-change)
 
 
 
