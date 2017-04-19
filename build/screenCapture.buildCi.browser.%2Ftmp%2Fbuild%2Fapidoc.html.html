@@ -54,12 +54,65 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-change">module gulp-change</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-change.gulp-change">
+            function <span class="apidocSignatureSpan"></span>gulp-change
+            <span class="apidocSignatureSpan">(run)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-change" id="apidoc.module.gulp-change">module gulp-change</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-change.gulp-change" id="apidoc.element.gulp-change.gulp-change">
+        function <span class="apidocSignatureSpan"></span>gulp-change
+        <span class="apidocSignatureSpan">(run)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gulpChange(run)Â&nbsp;{
+    return eventStream.map(function(file, done) {
+        if (file.isNull()) {
+        	return done(null, file);
+        }
+        if (file.isStream()) {
+        	return done(new PluginError('gulp-change', 'Streaming not supported.'));
+        }
+        var content = file.contents.toString();
+        var ctx = {
+        	file: file,
+        	fname: file.history[file.history.length - 1].substr(file.base.length),
+        	originalContent: content
+        };
+
+        function next(err, content) {
+        	if (err) {
+        		return done(err);
+        	}
+        	if (content) {
+        		file.contents = new Buffer(content);
+        	}
+        	done(null, file);
+        }
+
+        if (run.length &gt; 1) {
+        	run.call(ctx, content, next);
+        } else {
+        	next(null, run.call(ctx, content))
+        }
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
